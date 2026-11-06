@@ -36,8 +36,12 @@ export function NavbarClient() {
                   <NavigationMenuTrigger>Software</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[220px] gap-1 p-2">
-                      <li><NavigationMenuLink href="#sec-hub">SEC-Hub</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#rds-81346-app">RDS 81346 App</NavigationMenuLink></li>
+                      <li>
+                        <NavigationMenuLink href="#sec-hub">SEC-Hub</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#rds-81346-app">RDS 81346 App</NavigationMenuLink>
+                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -50,11 +54,21 @@ export function NavbarClient() {
                   <NavigationMenuTrigger>Knowledge Center</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[220px] gap-1 p-2">
-                      <li><NavigationMenuLink href="#ontology">RDS 81346 Ontology</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#videos">Videos</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#why-rds-81346">Why RDS 81346</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#articles">Articles</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#faq">FAQ</NavigationMenuLink></li>
+                      <li>
+                        <NavigationMenuLink href="#ontology">RDS 81346 Ontology</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#videos">Videos</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#why-rds-81346">Why RDS 81346</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#articles">Articles</NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#faq">FAQ</NavigationMenuLink>
+                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -81,10 +95,16 @@ export function NavbarClient() {
 
         {isOpen && (
           <nav className="border-t border-border/40 lg:hidden">
-            <NavigationMenu orientation="vertical" className="w-full max-w-none flex-col items-stretch">
+            <NavigationMenu
+              orientation="vertical"
+              className="w-full max-w-none flex-col items-stretch"
+            >
               <NavigationMenuList className="w-full flex-col items-stretch gap-0">
                 <NavigationMenuItem className="w-full">
-                  <NavigationMenuLink href="#iso-iec-81346" className="w-full rounded-none px-4 py-3">
+                  <NavigationMenuLink
+                    href="#iso-iec-81346"
+                    className="w-full rounded-none px-4 py-3"
+                  >
                     ISO/IEC 81346
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -94,13 +114,30 @@ export function NavbarClient() {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="w-full rounded-none border-t border-border/40">
                     <ul className="flex flex-col gap-0 p-0">
-                      <li><NavigationMenuLink href="#sec-hub" className="w-full rounded-none px-6 py-3">SEC-Hub</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#rds-81346-app" className="w-full rounded-none px-6 py-3">RDS 81346 App</NavigationMenuLink></li>
+                      <li>
+                        <NavigationMenuLink
+                          href="#sec-hub"
+                          className="w-full rounded-none px-6 py-3"
+                        >
+                          SEC-Hub
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink
+                          href="#rds-81346-app"
+                          className="w-full rounded-none px-6 py-3"
+                        >
+                          RDS 81346 App
+                        </NavigationMenuLink>
+                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <NavigationMenuLink href="#free-material" className="w-full rounded-none px-4 py-3">
+                  <NavigationMenuLink
+                    href="#free-material"
+                    className="w-full rounded-none px-4 py-3"
+                  >
                     Free Material
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -110,11 +147,43 @@ export function NavbarClient() {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="w-full rounded-none border-t border-border/40">
                     <ul className="flex flex-col gap-0 p-0">
-                      <li><NavigationMenuLink href="#ontology" className="w-full rounded-none px-6 py-3">RDS 81346 Ontology</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#videos" className="w-full rounded-none px-6 py-3">Videos</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#why-rds-81346" className="w-full rounded-none px-6 py-3">Why RDS 81346</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#articles" className="w-full rounded-none px-6 py-3">Articles</NavigationMenuLink></li>
-                      <li><NavigationMenuLink href="#faq" className="w-full rounded-none px-6 py-3">FAQ</NavigationMenuLink></li>
+                      <li>
+                        <NavigationMenuLink
+                          href="#ontology"
+                          className="w-full rounded-none px-6 py-3"
+                        >
+                          RDS 81346 Ontology
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink
+                          href="#videos"
+                          className="w-full rounded-none px-6 py-3"
+                        >
+                          Videos
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink
+                          href="#why-rds-81346"
+                          className="w-full rounded-none px-6 py-3"
+                        >
+                          Why RDS 81346
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink
+                          href="#articles"
+                          className="w-full rounded-none px-6 py-3"
+                        >
+                          Articles
+                        </NavigationMenuLink>
+                      </li>
+                      <li>
+                        <NavigationMenuLink href="#faq" className="w-full rounded-none px-6 py-3">
+                          FAQ
+                        </NavigationMenuLink>
+                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
